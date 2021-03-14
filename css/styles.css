@@ -8,9 +8,10 @@
   --background-color: #2f303a;
   --white-text-back-color: #ffffff;
   --back-team-color: #f5f4fa;
+  --icon-fill-color: #afb1b8;
 }
 
-. body {
+.body {
   font-family: var(--main-font);
   letter-spacing: 0.03em;
   background-color: var(--white-text-back-color);
@@ -33,6 +34,12 @@ h3,
 h4,
 p {
   margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .img {
@@ -137,6 +144,7 @@ p {
 
 .contact-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .contact-link {
@@ -237,9 +245,12 @@ p {
 }
 
 .features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+  padding: 25px;
   margin-bottom: 30px;
   background-color: var(--back-team-color);
 }
@@ -320,10 +331,13 @@ p {
 
 .team-card {
   width: 270px;
+  border-radius: 4px;
 }
+
 .description-card {
-  padding: 30px 15px;
+  padding: 30px 32px 30px;
   text-align: center;
+  background-color: var(--white-text-back-color);
 }
 
 .title-staff {
@@ -338,12 +352,32 @@ p {
 .staff-position {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 10px;
   color: var(--discription-text-color);
 }
 
 .list-social-icon {
   display: flex;
 }
+
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-fill-color);
+}
+
+.social-container:hover,
+.social-container:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-text-back-color);
+}
+
+/*Regular-customers*/
 
 /*Footer*/
 
